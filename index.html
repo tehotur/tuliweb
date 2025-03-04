@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tuliweb</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Fahkwang' rel='stylesheet'>
 </head>
 <body>
     <div>
+        <button class="menu-toggle">&#9776;</button>
         <nav class="navbar">
           <ul>
               <li><a href="#uvod">Úvod</a></li>
@@ -19,24 +21,73 @@
         </nav>
     </div>
     <div>
-        <section id="uvod">
-            <img src="pictures/uvod.png" alt="uvodni-img" class="full-width">
+        <section id="uvod" class="content">
+            <div class="left">
+                <img src="pictures/uvod-fotka.png" alt="uvodni-img">
+            </div>
+            <div class="right">
+                <img src="pictures/uvod-text.png" alt="uvodni-img-text">
+            </div>
         </section>
+
         <section id="info">
-            <img src="pictures/informace.png" alt="informace-img" class="full-width">
+            <div class="full-width">
+                <img src="pictures/info-top.png" alt="top">
+            </div>
+            <div class="content">
+                <div class="left">
+                    <img src="pictures/info-chata.png" alt="chata">
+                </div>
+                <div class="right">
+                    <img src="pictures/info-text.png" alt="info-text">
+                </div>
+            </div>
         </section>
-        <section>
-            <img src="pictures/dary-barvy.png" alt="dary-img" class="full-width">
+
+        <section id="dary" class="full-width">
+            <img src="pictures/dary.png" alt="dary-barvy">
         </section>
-        <section id="my">
-            <img src="pictures/my.png" alt="my-img" class="full-width">
+
+        <section id="my" class="content">
+            <div class="left">
+                <div class="text-part">
+                    <h2>Naše společné zážitky</h2>
+                    <img src="pictures/two.png" alt="two" class="small-img">
+                </div>
+
+            </div>
+            <div class="right">
+                <div class="slider">
+                    <button class="prev" onclick="prevImage()">&#10094;</button>
+                    <img id="sliderImage" src="slider-pictures/img1.jpeg" alt="Obrázek">
+                    <button class="next" onclick="nextImage()">&#10095;</button>
+                </div>
+            </div>
         </section>
-        <section id="program">
-            <img src="pictures/program.png" alt="program-img" class="full-width">
+
+        <section id="program" class="full-width">
+            <img src="pictures/program1.png" alt="program-img">
         </section>
-        <section id="ucast">
-            <img src="pictures/potvrzeni-ucasti.png" alt="potvrzeni-img" class="full-width">
+
+        <section id="ucast" class="content">
+            <div class="left">
+                <img src="pictures/ucast-pandy.png" alt="pandy-img">
+            </div>
+            <div class="right">
+                <div class="text-part">
+                    <h1>Užijte si s námi náš velký den. <br> Těšíme se! </h1>
+                    <a href="https://forms.gle/K6RHeAkUwGkkhKg18" class="btn" target="_blank">POTVRZENÍ ÚČASTI</a>
+                    <img src="pictures/flower.png" alt="flower" class="small-img">
+                </div>
+            </div>
         </section>
+
     </div>
+    <div class="full-width">
+        <img src="pictures/footer.png" alt="footer">
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
