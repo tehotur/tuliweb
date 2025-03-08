@@ -23,6 +23,8 @@ for (let i = 1; i <= 17; i++) {
 
 let currentIndex = 0;
 
+showImage(currentIndex);
+
 function showImage(index) {
     document.getElementById("sliderImage").src = images[index];
 }
